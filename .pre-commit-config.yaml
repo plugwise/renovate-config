@@ -1,0 +1,19 @@
+# For pre-commit.ci
+ci:
+  # Defer autoupdate to quarterly (there is no 'off' button) to have renovate pick up first
+  autoupdate_schedule: quarterly
+  submodules: true
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-json
+#      - id: no-commit-to-branch
+#        args:
+#          - --branch=main
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.33.0
+    hooks:
+      - id: markdownlint
+        name: "Linting Markdown"

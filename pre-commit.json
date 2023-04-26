@@ -5,7 +5,6 @@
     "enabled": true
   },
   "packageRules": [
-    ,
     {
       "matchManagers": ["pre-commit"],
       "addLabels": ["dependencies", "pre-commit", "auto-merge"],
