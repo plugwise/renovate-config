@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>plugwise/renovate-config"],
+  "pre-commit": {
+    "enabled": true
+  },
+  "packageRules": [
+    ,
+    {
+      "matchManagers": ["pre-commit"],
+      "addLabels": ["dependencies", "pre-commit", "auto-merge"],
+      "automerge": true
+    }
+  ]
+}

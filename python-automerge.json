@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>plugwise/renovate-config"],
+  "pip_requirements": {
+    "fileMatch": ["(^|/)([\\w-]*)requirements.*\\.(txt|pip)$"]
+  },
+  "packageRules": [
+    {
+      "matchManagers": ["pip_requirements", "poetry", "setup-cfg"],
+      "addLabels": ["dependencies", "python"],
+      "automerge": true
+    }
+  ]
+}
